@@ -1,0 +1,124 @@
+<!doctype html>
+<html ng-app="portfolio">
+	<head>
+		<meta charset="UTF-8">
+	    <meta name="viewport" content="width=device-width, initial-scale=1">
+	    <meta name="author" content="Linnea Watson">
+	    <meta name="description" content="Linnea Watson's Portfolio">
+
+		<title>Linnea Watson</title>
+        <!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">-->
+        <link rel="stylesheet" type="text/css" href="css/main.css">
+        <!-- Latest compiled and minified CSS -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+
+		<!-- Optional theme -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+
+		<script type="text/javascript" src="http://code.jquery.com/jquery-1.9.1.js"></script>
+	    <script type="text/javascript" src="js/jquery.immersive-slider.js"></script>
+	    <link rel="stylesheet" type="text/css" href="css/immersive-slider.css" />
+
+		<!-- Latest compiled and minified JavaScript -->
+		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.15/angular.min.js"></script>
+		<script type="text/javascript" src="js/app.js"></script>
+        <link rel="icon" href="images/logo.png">
+	</head>
+	<body ng-controller="PortfolioController as portfolio">
+		<div class="container">
+			<div class="row">
+				<header>
+					<img src="images/logo.png">
+					<nav>
+						<a href="">Home</a>
+						<a href="">Portfolio</a>
+						<a href="">Resumé</a>
+						<a href="">Contact</a>
+					</nav>
+				</header>
+			</div>
+			<div class="row"><!--
+					<div class="projects" ng-repeat="example in portfolio.examples">
+						<div class="main">
+							<div id="immersive_slider" ng-repeat="image in example.images">	
+								<div class="slide" data-blurred="{{image.img}}">-->
+									<!--<div class="row">
+										<div class="col-md-3"><h1>Links</h1></div>
+										<div class="col-md-6">
+											<img src="{{image.img}}" style="float:right; height: 300px;">
+										</div>
+										<div class="col-md-3">
+											<h1> {{example.name}}</h1>
+											{{example.description}}
+										</div>
+									</div>-->
+									<!--<img ng-src="{{image.img}}">
+								</div>
+			    				<a href="#" class="is-prev">&laquo;</a>
+			    				<a href="#" class="is-next">&raquo;</a>
+							</div>
+							<p>
+						</div>
+					</div>
+				</div>-->
+				<div class="main">
+    <div class="page_container">
+      <div id="immersive_slider">
+        <div class="slide" data-blurred="img/groupupboth.png">
+          <div class="content">
+            <h2>Immersive Slider</h2>
+            <p>It’s never been easier to watch Immersive Slider on the big screen
+            Send your favorite Immersive Slider videos from your Android phone or tablet to TV with the touch of a button. It’s easy. No wires, no setup, no nothing. Find out more here.</p>
+          </div>
+          <div class="image">
+            <img src="img/groupupboth.png" alt="Slider 1">
+          </div>
+        </div>
+        <div class="slide" data-blurred="img/groupuphome.png">
+          <div class="content">
+            <h2>Immersive Slider</h2>
+            <p>It’s never been easier to watch Immersive Slider on the big screen
+            Send your favorite Immersive Slider videos from your Android phone or tablet to TV with the touch of a button. It’s easy. No wires, no setup, no nothing. Find out more here.</p>
+          </div>
+          <div class="image">
+            <img src="img/groupuphome.png" alt="Slider 1">
+          </div>
+        </div>
+        <div class="slide" data-blurred="img/groupuploggedin.png">
+          <div class="content">
+            <h2>Immersive Slider</h2>
+            <p>It’s never been easier to watch Immersive Slider on the big screen
+            Send your favorite Immersive Slider videos from your Android phone or tablet to TV with the touch of a button. It’s easy. No wires, no setup, no nothing. Find out more here.</p>
+          </div>
+          <div class="image">
+            <img src="img/groupuploggedin.png" alt="Slider 1">
+          </div>
+        </div>
+        <div class="is-nav">
+          <a href="#" class="is-prev">&laquo;</a>
+          <a href="#" class="is-next">&raquo;</a>
+        </div>
+      </div>
+    </div>
+	</div>
+	<div class="benefits">
+    	<div class="page_container">
+	   
+	  </div>
+	</div>
+	<script type="text/javascript">
+	  $(document).ready( function() {
+	    $("#immersive_slider").immersive_slider({
+	      container: ".main",
+	      animation: "bounce",
+	      autoStart: false
+	    });
+	  });
+ 
+  	</script>
+			</div>
+			<!--<div>Icons made by <a href="http://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a> from <a href="http://www.flaticon.com" title="Flaticon">www.flaticon.com</a>             is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0">CC BY 3.0</a></div>-->
+		</div>
+	</body>
+
+</html>
