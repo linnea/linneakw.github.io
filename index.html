@@ -1,5 +1,5 @@
 <!doctype html>
-<html>
+<html ng-app="home">
 	<head>
 		<meta charset="UTF-8">
 	    <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -8,22 +8,308 @@
 
 		<title>Linnea Watson</title>
         <!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">-->
-        <link rel="stylesheet" type="text/css" href="css/main.css">
+        
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"
+        type="text/javascript"></script>
+        <!-- Latest compiled and minified CSS -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
 
-        <link rel="icon" href="img/icon.png">
+		<!-- Optional theme -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+		<link rel="stylesheet" type="text/css" href="css/home.css">
+
+		<!-- Latest compiled and minified JavaScript -->
+
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+
+		<script type="text/javascript" src="http://code.jquery.com/jquery-1.9.1.js"></script>
+		<script type="text/javascript" src="js/jquery.flexslider.js">
+
+		</script>
+		<script src="js/jquery.fitvid.js"></script>
+		<script type="text/javascript" src="js/shCore.js"></script>
+	<script type="text/javascript" src="js/shBrushXml.js"></script>
+	<script type="text/javascript" src="js/shBrushJScript.js"></script>
+
+  <!-- Optional FlexSlider Additions -->
+    <script src="js/froogaloop.js"></script>
+	<script src="js/jquery.fitvid.js"></script>
+	<script src="js/demo.js"></script>
+		<link rel="stylesheet" href="css/flexslider.css">
+
+		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.15/angular.min.js"></script>
+		<script type="text/javascript" src="js/app.js"></script>
+        <link rel="icon" href="images/logo.png">
 	</head>
 	<body>
-		<header>LINNEA WATSON
-			<nav><p>
-				<a href="index.html">Bio</a><br></br>
-				<a href="education.html">Education</a><br></br>
-				<a href="work.html">Work History</a><br></br>
-				<a href="reflection.html">Reflection</a>
-			</nav>
-		
-		</header>
+		<div class="container-fluid">
+			<div class="bg"></div>
+			<div class="row">
+				<div class="col-lg-12">
+					<div class="nav">
+						<img src="images/logo.png">
+						<hr />
+						<nav>
+							<a href="/index.html">Home</a>
+							<a href="/#portfolio">Portfolio</a>
+							<a href="https://www.dropbox.com/s/7ltv0oiiiczndwr/Linnea%20Watson%20Resume.pdf?dl=0">Resumé</a>
+							<a href="/#contact">Contact</a>
+						</nav>
+					</div>
+				</div>
+			</div>
+
+			<div class="row">
+				<div id="slide1">
+					<div class="intro">
+						<div id="intro-text">
+							Hello, my name is <h1>Linnea Watson,</h1>
+							<br>and I love <h2>designing</h2> & <h3>coding</h3><br>
+							intuitive & elegant solutions 
+							<br class="bump">
+							<a href="/portfolio.html" class="btn btn-primary btn-lg">VIEW MY PORTFOLIO</a>
+						</div><!--
+						<div id="bottom-bar"><a href="">CODING</a><a href="">LEARNING</a><a href="">INTUITIVE DESIGN</a>-->
+					</div>
+				</div>
+			</div>
+			<!--
+			<div id="works">	
+				<div class="row">
+					<div class="col-md-4">
+						<img src="img/coding.png" alt="coding icon"><br />
+						Coding Projects
+					</div>
+					<div class="col-md-4">
+						<img src="img/design.png" alt="design icon">
+						<br />
+						Design Examples
+
+					</div>
+					<div class="col-md-4">
+						<img src="img/other.png" alt="personal project icons">
+						<br />
+						Personal Projects
+					</div>
+				</div>
+			</div>
+			-->
+			<div class="row">
+				<div id="slide2">
+					<div id="about">
+						<div class="about">
+							<div class="col-md-4 col-sm-4">
+								
+								<h1>BIO</h1>
+								<hr></hr>
+								<p>Hello! I am a student at the University of Washington pursuing a Bachelor's degree in Informatics. I thrive on combining information and design to produce seamless and visually aesthetic information systems.
+								</p>
+
+								<p>
+								I have a passionate interest for UI/UX Design and big data. I am also very good at performing and organizing multiple tasks at once, as well as communicating and working efficiently in an agile, fast paced team environment.</p>
+							</div>
+							<div class="col-md-4 col-sm-4">
+								<img src="img/me.png" width="100%" alt="Linnea Watson"> 
+							</div>
+							<div class="col-md-4 col-sm-4">
+								<h1>Skills & Interests</h1>
+								<hr>
+								<ul>
+									<li>Proficient in HTML, CSS, Python, Java, JavaScript, Angular.js, and SQL.</li>
+									<li>Interest in elegant, simple, and creative UI and UX design.</li>
+									<li>Passion for web & app development and eager to expand knowledge.</li>
+									<li>Can describe & implement functions of database management systems using SQL</li>
+									<li>Comfortable with many different development and design tools such as GitHub, LESS, Axure,    Sketch and Photoshop.</li>
+								</ul>	
+							</div>
+						</div>
+						
+					</div>
+				</div>
+			</div><!--
+			<div class="bg2">
+
+			</div>-->
+			<div class="row" ng-controller="PortfolioController as portfolio">
+				<div class="projects-container" id="portfolio">
+			    	<h5>PROJECTS</h5>
+			    
+			    	<hr>
+			    	<div class="item">
+			    		<div class="col-md-5">
+				    		<h1>Group Up</h1><p>
+				      		In winter quarter, 2015 I took a class called Design Thinking. The main focus of the class was to create a new design that solves a problem that affects college level juniors and seniors. After being placed in a group with Hannah Yoo and Patrick Harper-Joles, we brainstormed the most pressing problems we face as college students. We struggled to find something that deeply affected all of us. However, eventually we decided on something we’ve all experienced.
+							</p><p>
+							<strong>Problem:</strong> <i>The inability to connect and form relationships with other students, especially the further in time the quarter progresses.</i>
+							</p>
+							<p>
+							Once we discovered the problem, we could continue on to developing a paper prototype that would solve our design problem and provide a platform for students to connect and communicate more seamlessly.  We wanted to give students to tools to integrate their schedules and availabilities, while taking into account their learning and studying styles, preferred location and amenities, and more.  </p>
+
+
+				      		<a href="https://www.dropbox.com/s/51infv5b5vem83y/Group%20Up%20Documentation.docx?dl=0" class="btn btn-primary btn-sm">Design Document</a>
+				      		<a href="https://www.dropbox.com/s/1entvca53njsxor/GroupUp%20Process%20Book.pptx?dl=0" class="btn btn-primary btn-sm">Process Book</a><br>
+				      	</div>
+				      	<div class="flexslider col-md-7">
+					      	<ul class="slides">
+						    	<li>
+						        	<img src="img/groupupboth.png" alt="Slider 1">
+						      	</li>
+						    	<li>
+						        	<img src="img/groupup.png" alt="Slider 2">
+						      	</li>
+						    	<li>
+						        	<img src="img/groupupmacbook.png" alt="Slider 3">
+						      	</li>
+						      	<li>
+						      	
+						      		<iframe id="player_1" src="https://www.youtube.com/embed/uoTyqDk1n0A" width="500" height="310" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
+						      		<!--
+						      		<iframe id="player_1" src="http://player.vimeo.com/video/126817694?api=1&player_id=player_1" width="500" height="300" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>-->
+						      	</li>
+					        </ul>
+				      	</div>
+				     </div>
+				     <hr>
+				     <div class="item">
+				     	<div class="col-md-5">
+				    		<h1>Dub Design</h1><p>
+				    		In Fall 2014 I took Women in Informatics, a course that talked about gender and diversity in the tech field. I was assigned the task of redesigning UW's mobile application, and presenting the changes as a proposal to the University of Washington to fund our proposed changes. We began by analyzing the current problems of the application: lack of functionality, maintenance, and user base, as well as an overwhelming amount of features that didn't do anything more than link to external applications. </p>
+				    		<p>Because this was the University of Washington's main mobile application, we proposed a redesign that would provide a better experience to UW's students, guests, and faculty. We redesigned the app with features that were personalized to the user and had quicker access to more usable features that its users wanted. </p>
+				    		<p>After researching and surveying a group of students, and interviewing professors, we set out with a new design that added customized, attractive features for a diverse variety of users.</p>
+
+				    		
+				      		<a href="https://www.dropbox.com/s/irkp1id30pn31me/Final%20Info%20102.pptx?dl=0" class="btn btn-primary btn-sm">Presentation</a>
+				      		<a href="https://www.dropbox.com/s/f84yqdwdikwlffn/INFO102_Documentation.docx?dl=0" class="btn btn-primary btn-sm">Documentation</a><br>
+
+				      	</div>
+				      	<div class="flexslider col-md-7">
+					      	<ul class="slides">
+						    	<li>
+						        	<img src="img/dubdesign1.png" alt="Slider 1">
+						      	</li>
+						    	<li>
+						        	<img src="img/dubdesign2.png" alt="Slider 1">
+						      	</li>
+					        </ul>
+				      	</div>
+				    </div>
+				    <hr>
+				    <div class="item">
+				     	<div class="col-md-5">
+				    		<h1>Camera & Gallery App</h1>
+				      		<p>In Winter 2014 I took the course Mobile App Design. In this course I was given a wide variety of opportunities to design. I worked in an agile form of sprints, first creating a design language, then deciding gestures and interactions, the Browser & Maps application, and a Camera & Gallery application based around a chosen design language.</p><p>
+				      		The course gave me immmeasurable experience in  design and user experience. This particular example outlines my group's final project, the Camera and Gallery Application. We designed around the design language "Orbit", which was chosen by the class and centered around the idea of orbital and radial menus.</p><p>My team mainly focused on the Gallery application. We decided upon a radial menu approach to sort pictures by attributes such as time, color, and location. After choosing a filter, the user then has the option to select a certain value within that filter (e.g. filter: color, color: orange). Also shown is our image editor, following the design language with radial menus that let you pan through by spinning the corner wheel.
+				      		</p>
+				      		<a href="https://www.dropbox.com/s/z7j0lagw8bwae4e/Camera%20%26%20Photo%20Gallery%20App%20FINAL%20%281%29.pptx?dl=0" class="btn btn-primary btn-sm">Presentation</a><br>
+				      	</div>
+				      	<div class="flexslider col-md-7">
+					      	<ul class="slides">
+						    	<li>
+						        	<img src="img/mobile/prototypes1.png" alt="Slider 1">
+						      	</li>
+						    	<li>
+						        	<img src="img/mobile/prototypes2.png" alt="Slider 2">
+						      	</li>
+						      	<li>
+						        	<img src="img/mobile/prototypes3.png" alt="Slider 3">
+						      	</li>
+						      	<li>
+						        	<img src="img/mobile/prototypes4.png" alt="Slider 4">
+						      	</li>
+					        </ul>
+				      	</div>
+				     </div>
+				    <hr>
+				    <div class="item" style="font-size: 13px;">
+				     	<div class="col-md-5">
+				    		<h1>MammaRo Revamp</h1>
+				      		I have been interested in designing and developing for as long as I can remember. I self-taught myself HTML and CSS as a kid, and given the chance looked out for projects and courses I could improve upon. Although I didn't have much design or development experience at the time, I took on the task of redesigning the MammaRo' website in my senior year of high school. </p>
+
+				      		<p>
+				      		The website was not very aesthetically pleasing, and was confusing to navigate. There was both a side bar, and a top navigation. I decided to maintain their branding, while still organizing their three branches of products; MammaRo', La Gabbianella , and Ricardo Marzi. I designed a header and top bar that could lead the user to the type of product they were interested in, as well as their news and advertisements, footer with crucial contact information. I also made sure to  keep the PayPal cart integration both at the top and bottom of the page for easy access.</p><p>I learned so much from this project, and pushed myself to create something that would finally be used in real world application. Unfortunately, MammaRo' has since gone out of business. They did not have a developer that knew how to maintain and update css/html, but I was still extremely grateful for the opportunity, and learned so much about interacting and designing for a client rather than just for myself. <br>
+				      		<a href="https://www.dropbox.com/s/w8oi2uxg6131qof/after.png?dl=0" class="btn btn-primary btn-sm">After - Redesigned Page</a>
+				      		<a href="https://www.dropbox.com/s/wt7dwm5axfiyl5y/OLD.png?dl=0" class="btn btn-primary btn-sm">Before - Old design</a><br>
+				      	</div>
+				      	<div class="flexslider col-md-7">
+					      	<ul class="slides">
+						    	<li>
+						        	<img src="img/mammaro/beforeafter.png" alt="Slider 1">
+						      	</li>
+						    	<li>
+						        	<img src="img/mammaro/before1.png" alt="Slider 1">
+						      	</li>
+						      	<li>
+						        	<img src="img/mammaro/vitavera1.png"  alt="Slider 1">
+						      	</li>
+						      	<li>
+						        	<img src="img/mammaro/before2.png" alt="Slider 1">
+						      	</li>
+						      	<li>
+						        	<img src="img/mammaro/vitavera2.png" alt="Slider 1">
+						      	</li>
+					        </ul>
+				      	</div>
+				    </div>
+			    </div>
+			</div>
+
+			<div class="row">
+				<div id="contact" class="footer">
+					<div class="col-lg-10">
+						<img src="images/logo.png" class="logo-foot"> Linnea Watson   |   <a href="mailto:linnea_watson@hotmail.com">linnea_watson@hotmail.com</a>
+					</div>
+					<div class="col-lg-2 links">
+					<a href="mailto:linnea_watson@hotmail.com"><img src="images/mail.png" alt="email me"></a><a href="https://www.linkedin.com/in/linneawatson"><img src="images/linkedin.png" alt="view my linked in profile"></a><a href="https://github.com/linneakw"><img src="images/github.png" alt="view my GitHub"></a>
+					</div>
+				
+				</div>
+				
+			</div>
+		</div>
 	</body>
-	<main> 
-		<center>Under construction, please come back on May 4th!</center>
-	</main>
+	<script defer src="../jquery.flexslider.js"></script>
+	<script type="text/javascript">
+    $(function(){
+      SyntaxHighlighter.all();
+    });
+    $(window).load(function(){
+
+      // Vimeo API nonsense
+      var player = document.getElementById('player_1');
+      $f(player).addEvent('ready', ready);
+
+      function addEvent(element, eventName, callback) {
+        (element.addEventListener) ? element.addEventListener(eventName, callback, false) : element.attachEvent(eventName, callback, false);
+      }
+
+      function ready(player_id) {
+        var froogaloop = $f(player_id);
+
+        froogaloop.addEvent('play', function(data) {
+          $('.flexslider').flexslider("pause");
+        });
+
+        froogaloop.addEvent('pause', function(data) {
+          $('.flexslider').flexslider("play");
+        });
+      }
+
+
+      // Call fitVid before FlexSlider initializes, so the proper initial height can be retrieved.
+      $(".flexslider")
+        .fitVids()
+        .flexslider({
+          animation: "slide",
+          useCSS: false,
+          animationLoop: false,
+          smoothHeight: true,
+          start: function(slider){
+            $('body').removeClass('loading');
+          },
+          before: function(slider){
+            $f(player).api('pause');
+          }
+      });
+    });
+  </script>
 </html>
