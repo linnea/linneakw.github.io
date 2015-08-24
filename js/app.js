@@ -30,6 +30,7 @@ $(window).load(function() {
     .flexslider({
       animation: "slide",
       useCSS: false,
+      slideshow: false;
       animationLoop: false,
       smoothHeight: true,
       before: function(slider){
