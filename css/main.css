@@ -36,6 +36,10 @@ hr {
   height: 500px;
   padding: 5px;
 }
+
+.item a{
+  margin: 0;
+}
 .projects-container {
   position: relative;
   margin-top: 100px;
