@@ -1,0 +1,42 @@
+html, body {
+	width: 100%;
+	margin: 0;
+	font-family: 'Open Sans';
+}
+
+.row-centered {
+	text-align:center;
+}
+.col-centered {
+	display:inline-block;
+	float:none;
+	text-align:left;
+	margin-right:-4px;
+}
+
+.working {
+	background-color: #ededed;
+	padding: 10px;
+	margin-bottom: 10px;
+}
+
+.images {
+	width: 50%;
+	list-style-type: none;
+	display: inline;
+	margin: 0 auto;
+}
+
+.image {
+	float: left;
+}
+
+
+.image img {
+	max-width: 200px;
+	border: 8px solid #DDD;
+	margin-right: 1em;
+	margin-bottom: 1em;
+	border-radius: 1px;
+}
+

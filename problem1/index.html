@@ -1,0 +1,47 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Problem 1</title>
+
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/main.css">
+
+	<!-- hot link to minified Angular library -->
+	<script src="js/angular.min.js"></script>
+	<script src="js/jquery-1.11.3.min.js"></script>
+
+</head>
+<body ng-app="Gallery" ng-controller="GalleryCtrl as gall">
+<main class="container-fluid">
+    <div class="row row-centered">
+        <div class="col-centered col-sm-8 working"><p>I am still working on improving this solution, but the current working version is below.</p>
+            <button type="button" class="btn btn-default"><a href="https://www.dropbox.com/sh/k1bs607cbrp6pxp/AAAqWZwgvaYTJWlkZev_CRpVa?dl=0">Provided code</a></button>
+            </p>
+
+        </div>
+    </div>
+	<div class="row row-centered">
+		<div class="col-sm-12 col-md-10 col-lg-8 col-centered">
+			<ul class="images">
+				<li class="image" ng-mouseover="onHover(this)" ng-mouseleave="onOut(this)" ng-repeat="image in images"><img ng-src="{{image.display}}"></li>
+			</ul>
+		</div>
+	</div>
+    <div class="row-centered row">
+        <div class="col-centered col-sm-8 working">
+            <p>Things to work on:</p>
+            <ul>
+                <li>jQuery Black & White plugin integration, instead of custom bw images</li>
+                <li>Fade effects</li>
+                <li>Better handling of mouse over events</li>
+            </ul>
+        </div>
+    </div>
+</main>
+
+<!-- link to Angular application -->
+<script src="js/app.js"></script>
+</body>
+</html>
