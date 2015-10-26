@@ -23,7 +23,6 @@
 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
 		<script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
 <script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
-		<script type="text/javascript" src="http://code.jquery.com/jquery-1.9.1.js"></script>
 		<script type="text/javascript" src="js/jquery.flexslider.js">
 
 		</script>
@@ -51,7 +50,7 @@
 						<img src="images/logo.png">
 						<hr />
 						<nav>
-							<a class="scroll" href="/#portfolio">Portfolio</a>
+							<a class="scroll">Portfolio</a>
 							<a href="https://www.dropbox.com/s/v9wb9k7l2ia93fz/Linnea%20Watson%20Resume%20PDF.pdf?dl=0" target="_blank">Resumé</a>
 							<a href="/#contact">Contact</a>
 						</nav>
@@ -67,7 +66,7 @@
 							<br>and I love <h2>designing</h2> & <h3>coding</h3><br>
 							intuitive & elegant solutions 
 							<br class="bump">
-							<a href="/#portfolio" class="scroll btn btn-primary btn-lg">VIEW MY PORTFOLIO</a>
+							<a class="scroll btn btn-primary btn-lg">VIEW MY PORTFOLIO</a>
 						</div><!--
 						<div id="bottom-bar"><a href="">CODING</a><a href="">LEARNING</a><a href="">INTUITIVE DESIGN</a>-->
 					</div>
@@ -340,14 +339,12 @@
     	$('.flexslider').flexslider("pause");
 	});
 	});
-  	$( document ).ready(function() {
 
     $(".scroll").click(function() {
       $('html, body').animate({
         scrollTop: $("#portfolio").offset().top
-      }, 400);
+      }, 600);
     });
 
-  });
   </script>
 </html>
