@@ -50,8 +50,7 @@
 						<img src="images/logo.png">
 						<hr />
 						<nav>
-							<a href="/index.html">Home</a>
-							<a href="/#portfolio">Portfolio</a>
+							<a class="scroll" href="/#portfolio">Portfolio</a>
 							<a href="https://www.dropbox.com/s/v9wb9k7l2ia93fz/Linnea%20Watson%20Resume%20PDF.pdf?dl=0" target="_blank">Resumé</a>
 							<a href="/#contact">Contact</a>
 						</nav>
@@ -67,7 +66,7 @@
 							<br>and I love <h2>designing</h2> & <h3>coding</h3><br>
 							intuitive & elegant solutions 
 							<br class="bump">
-							<a href="/#portfolio" class="btn btn-primary btn-lg">VIEW MY PORTFOLIO</a>
+							<a href="/#portfolio" class="scroll btn btn-primary btn-lg">VIEW MY PORTFOLIO</a>
 						</div><!--
 						<div id="bottom-bar"><a href="">CODING</a><a href="">LEARNING</a><a href="">INTUITIVE DESIGN</a>-->
 					</div>
@@ -278,13 +277,12 @@
 				    </div>
 			    </div>
 			</div>
-
+</div><div class="container-fluid footer" id="contact">
 			<div class="row">
-				<div id="contact" class="footer">
-					<div class="col-lg-10">
+					<div class="col-xs-12 col-sm-8 col-lg-4 col-offset-5">
 						<img src="images/logo.png" class="logo-foot"> Linnea Watson   |   <a href="mailto:linnea_watson@hotmail.com">linnea_watson@hotmail.com</a>
 					</div>
-					<div class="col-lg-2 links">
+					<div class="col-xs-11 col-sm-4 col-lg-3 links">
 					<a href="mailto:linnea_watson@hotmail.com"><img src="images/mail.png" alt="email me"></a><a href="https://www.linkedin.com/in/linneawatson"><img src="images/linkedin.png" alt="view my linked in profile"></a><a href="https://github.com/linneakw"><img src="images/github.png" alt="view my GitHub"></a>
 					</div>
 				
@@ -292,6 +290,7 @@
 				
 			</div>
 		</div>
+	</div>
 	</body>
 	<script defer src="../jquery.flexslider.js"></script>
 	<script type="text/javascript">
@@ -339,6 +338,15 @@
         $('.flexslider .slides > li').click(function() {
     	$('.flexslider').flexslider("pause");
 	});
+	});
+  	$( document ).ready(function() {
+
+    $(".scroll").click(function() {
+      $('html, body').animate({
+        scrollTop: $("#portfolio").offset().top
+      }, 400);
     });
+
+  });
   </script>
 </html>
